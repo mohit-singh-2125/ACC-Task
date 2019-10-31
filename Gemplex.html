@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html amp>
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1,initial-scale=1"
+    />
+  <link rel="canonical" href="index1.html" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="animate/animate.css">
+  <script src="CSS/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <link rel="stylesheet" href="CSS/style1.css">
+
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+  <script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+
+  <style amp-custom>
+    .blue-box, .red-box, .green-box {
+      width: 100%;
+      height: 280px;
+    }
+    .blue-box {
+      background: blue;
+    }
+    .green-box {
+      background: green;
+    }
+    .red-box {
+      background: red;
+    }
+    #custom-button .amp-carousel-button-prev {
+      left: 5%;
+      background-image: url('https://amp.dev/static/samples/img/carousel-arrow-left.png');
+    }
+    #custom-button .amp-carousel-button-next {
+      right: 5%;
+      background-image: url('https://amp.dev/static/samples/img/carousel-arrow-right.png');
+    }
+
+amp-carousel .i-amphtml-scrollable-carousel-container::-webkit-scrollbar {display:none}
+
+amp-img{
+
+  display: block;
+  width: 50%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+  </style>
+<body>
+<!-- <script>
+ $('input:checkbox').change(function(){
+   if($(this).is(':checked')) 
+       
+	   $(body).css("background-color", "black");
+  else 
+      $(body).css("background-color", "white");
+ });
+</script> -->
+<a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;">Top<span></span></a>
+
+<div class="row  justify-content-center top-ad-section" id="ad"><div class="col-md-10 text-center align-self-center" style="font-family: sans-serif;"><span class="" style="color: rgb(38, 189, 190); font-family: sans-serif;">Gemplex </span st> -  Stream The New! Premium VOD &amp; Music Streaming.</div>
+<span>
+<input  onclick="document.getElementById('ad').style.display = 'none'" type="image" src="http://getdrawings.com/free-icon-bw/close-icon-png-5.png" width="50px" height="50px"></span></div>
+
+<nav class="navbar navbar-expand-md bg-white navbar-light sticky-top">
+  <a class="navbar-brand"><img src="CSS/index.png" alt="Logo" style="width:7rem; height:2.5rem; padding-left: 15px"></a>
+
+  <button class="navbar-toggler border-5" type="button" data-toggle="collapse"  data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+   
+  <div class=" collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a id="p1" class="nav-link" href="#">Originals</a>
+      </li>
+      <li class="nav-item">
+        <a id="p1" class="nav-link" href="#">Movies</a>
+      </li>
+      <li class="nav-item">
+        <a id="p1" class="nav-link" href="#">Videos</a>
+      </li>
+      <li class="nav-item">
+        <a id="p1" class="nav-link" href="#">Music</a>
+      </li>
+      <li class="nav-item">
+        <a id="p1" class="nav-link" href="#">Hype</a>
+      </li>  
+    </ul>
+  </div> 
+    
+    
+   
+<div>
+    <ul class="nav navbar-nav navbar-right">
+         <li class="nav-item">
+            <div class="nav-link" >
+              <form action="" class="search-form">
+                  <div class="form-group has-feedback">
+                  <label for="search" class="sr-only">Search</label>
+                  <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+              </form>
+          </div>
+         </li>
+          <li class="nav-item">
+            <div class="nav-link">
+                  <span id="s1">Light</span>
+                    <label class="switch">
+                      <input type="checkbox" id="nightmode">
+                      <span class="slider round"></span>
+                    </label>
+                    <span id="s1">Dark</span>
+      </div>
+      </li>
+      <li class="nav-item">
+        <button class="nav-link" id="btn" >LOGIN</button>
+      </li>
+
+   </ul>
+  </div>
+  
+</nav>
+<br><br>
+  <div id="demo" class="carousel slide" data-ride="carousel" style="width: 100%; margin-top: -45px ">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+   <div class="carousel-inner" style="height: auto;">
+    <div class="carousel-item active">
+      <img src="img\c1.jpg" alt="BG">
+       <div class="carousel-caption">
+        <h1 class="animated fadeInLeft" style="font-size: 20px;"><span><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" style="max-height:50px;max-width:50px;min-height:10px;min-width:10px; padding-right:5px" alt=""></span><strong>Bollywood Gurukul</strong></h1><br><br>
+        <p class="animated fadeInLeft" style="float:left; text-align: left; margin-left:-180px;">|Comedy</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img\c2.jpg" alt="Chicago">
+      <div class="carousel-caption">
+        <h1 class="animated fadeInLeft" style="font-size: 20px;"><span><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" style="max-height:50px;max-width:50px;min-height:10px;min-width:10px; padding-right:5px" alt=""></span><strong>Lovely Da Dhaba</strong></h1><br><br>
+        <p class="animated fadeInLeft" style="float:left; text-align: left; margin-left:-155px;">|Drama</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="img\c3.jpg" alt="New York">
+       <div class="carousel-caption">
+        <h1 class="animated fadeInLeft" style="font-size: 20px;"><span><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" style="max-height:50px;max-width:50px;min-height:10px;min-width:10px; padding-right:5px" alt=""></span><strong>The Red Land</strong></h1><br><br>
+        <p class="animated fadeInLeft"style="float:left; text-align: left; margin-left:-125px;">|Action |Thriller</p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+<!-- grid layout-->
+<div style="width:98.9%">
+<div class="iner" style="width: 100%;">        
+  <div class="row" id="row1">
+    <img src="img/g1.jpg" style="width: 50%;">
+ <img src="img/g4.jpg" style="width: 50%;">
+  </div>
+  <div class="row" id="row1">
+    <img src="img/g6.jpg" style="width: 100%;">
+  </div>
+  <div class="row" id="row1">
+    <img src="img/g2.jpg" style="width: 50%;">
+    <img src="img/g7.jpg" style="width: 50%;">
+  </div>
+  <div class="row" id="row1">
+    <img src="img/g3.jpg" style="width: 100%;">    
+  </div>
+  <div class="row" id="row1">
+    <img src="img/g5.jpg" style="width: 50%;">
+    <img src="img/g6.jpg" style="width: 50%;">
+  </div>
+</div>
+
+<div class="row" id="grid_task" style="width:auto;height: 100%;"> 
+  <div class="column">
+    <img src="img/g1.jpg" style="height:33.33%;width:100%">
+    <img src="img/g4.jpg" style="height:33.33%;width:100%">
+    <img src="img/g6.jpg" style="height:33.33%;width:100%">
+  </div>
+  <div class="column">
+    <img src="img/g2.jpg" style="height:50%;width:100%;">
+    
+    <img src="img/g7.jpg" style="height:50%;width:100%;">
+  </div>  
+  <div class="column">
+    <img src="img/g3.jpg" style="height:33.33%;width:100%">
+    <img src="img/g5.jpg" style="height:33.33%;width:100%">
+    <img src="img/g8.jpg" style="height:33.33%;width:100%">
+  
+  </div>
+</div>
+</div>
+<!-- grid layout-->
+<div class="myampmenu" style="padding:35px">
+<h5 style="font-weight: bold; color: #04396B">ORIGANLS</h5>
+<h6 style="font-weight: bold; color: #007bff">Series</h6>
+<div>
+  <amp-carousel height="400" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+      <div class="play">
+    <amp-img src="img\h1_0.jpg" width="430" height="380" style="border: 5%" alt="a sample image" > 
+    </amp-img> <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px></div>
+  </div>
+     <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Bollywood Gurukul<br><em>2019 | 45min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+     <div>
+    <div>
+    <div class="play">
+    <amp-img src="img\h2_0.jpg" width="430" height="380" alt="another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>The Red Land<br><em>2019 | 2hr 44min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+     <div>
+    <div>
+      <div class="play">
+    <amp-img src="img\h3_0.jpg" width="430" height="380" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Lovely Da Dhaba<br><em>2019 | 1hr 34min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+  <div>
+    <div>
+    <amp-img src="img\h_0.jpg" width="430" height="380" alt="and another sample image" ></amp-img>
+     <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+    </amp-carousel>
+</div>
+<h6 style="font-weight: bold; color: #007bff">Non Fiction</h6>
+<div>
+  <amp-carousel height="400" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+  <div class="play">
+    <amp-img src="img\h4_0.jpg" width="430" height="380"  alt="a sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Lets Go<br><em>2019 | 14min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+        <div class="play">
+    <amp-img src="img\h5_0.jpg" width="430" height="380" alt="another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Hands<br><em>2019 | 30min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+    <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\h6_0.jpg" width="430" height="380" alt="and another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Tripper Saga - Himachal Pradesh<br><em>2019 |1hr 40min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+    <amp-img src="img\h_0.jpg" width="430" height="380" alt="and another sample image" ></amp-img>
+     <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'></p>
+            </div>
+     </amp-fit-text>
+   </div>
+ </div>
+   
+  </amp-carousel>
+</div>
+<h6 style="font-weight: bold; color: #007bff">Musicals</h6>
+<div>
+  <amp-carousel height="320" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\m1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Sone Pind Di Galiyan<br><em>2019 |3min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play">
+    <amp-img src="img\m2.jpg" width="200" height="300" alt="another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Proloyer Shrotey<br><em>2019 |5min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\m3.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+          <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Hum Khane Ke Deewane<br><em>2019 |2min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\m4.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+              <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Baje Re<br><em>2019 |5min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play">
+    <amp-img src="img\m5.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+              <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Desi Beauty<br><em>2019 |4min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+     <div class="play"> 
+    <amp-img src="img\m6.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+               <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Tere Bin<br><em>2019 |5min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+       <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\m1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Sone Pind Di Galiyan<br><em>2019 |3min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+       <div>
+    <div>
+       <div class="play">
+    <amp-img src="img\m3.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Khane Ke Deewane<br><em>2019 |3min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+     <div class="play"> 
+    <amp-img src="img\m6.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+               <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Tere Bin<br><em>2019 |5min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   
+    <div>
+    <div>
+      
+    <amp-img src="img\m_0.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+  </amp-carousel>
+</div>
+<h6 style="font-weight: bold; color: #007bff">Shorts</h6>
+<div>
+  <amp-carousel height="320" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\s1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+               <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>VDA<br><em>2019 |34min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play"> 
+    <amp-img src="img\s2.jpg" width="200" height="300" alt="another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Delusion<br><em>2019 |44min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+       <div class="play"> 
+    <amp-img src="img\s3.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Dhuaan<br><em>2019 |53min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+       <div class="play"> 
+    <amp-img src="img\s4.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Aman<br><em>2019 |23min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+     <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\s5.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>A Sunday<br><em>2019 |30min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\s6.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+      <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+       <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Kera<br><em>2019 |25min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\s1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+               <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>VDA<br><em>2019 |34min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\s3.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+  </div>
+               <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Dhuaan<br><em>2019 |53min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+      
+    <amp-img src="img\m_0.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+  </amp-carousel>
+</div>
+<h6 style="font-weight: bold; color: #007bff">Lyrical</h6>
+<div>
+  <amp-carousel height="320" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\l1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Banara ki Kahani<br><em>2019 |2.30min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\l2.jpg" width="200" height="300" alt="another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Tere Bin-Lyrical<br><em>2019 |3min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\l3.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Proloyer Shrotey-Lyrical<br><em>2019 |3min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play"> 
+    <amp-img src="img\l4.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Naina Lyrical<br><em>2019 |4min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play"> 
+    <amp-img src="img\l5.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Agomoni Lyrical<br><em>2019 |5min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+          <div class="play"> 
+    <amp-img src="img\l6.jpg" width="200" height="300" alt="and another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Lassi Song<br><em>2019 |6min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div> 
+   <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\l1.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Banara ki Kahani<br><em>2019 |2.30min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\l3.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+        <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Porloyer<br><em>2019 |20min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+      
+    <amp-img src="img\m_0.jpg" width="200" height="300"  alt="a sample image" ></amp-img>
+     
+      <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+  </amp-carousel>
+</div >
+<center>
+  <div style="padding-top: 15px;padding-bottom: 15px;">
+<img src="img\ad.jpg" height="200px" width="1000px"  alt="ad">
+  </div>
+</center>
+<h5 style="font-weight: bold; color: #04396B">Movies</h5>
+<h6 style="font-weight: bold; color: #007bff">Premium Shorts</h6>
+<div>
+  <amp-carousel height="310" layout="fixed-height" type="carousel">
+    <div>
+    <div>
+    <div class="play"> 
+    <amp-img src="img\sm1.jpg" width="450" height="295"  alt="a sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+    <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Save The Dream<br><em>2019 |7min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div> 
+    <div>
+    <div>
+      <div class="play"> 
+    <amp-img src="img\sm2.jpg" width="450" height="295" alt="another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+ <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Shri Devi Ki Love Story<br><em>2019 |8min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+     <div class="play">  
+    <amp-img src="img\sm3.jpg" width="450" height="295" alt="and another sample image" ></amp-img>
+    <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+ <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>The Last Date<br><em>2019 |19min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+         <div class="play">  
+    <amp-img src="img\sm4.jpg" width="450" height="295" alt="and another sample image" ></amp-img>
+     <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+ <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>The Wolf Theory<br><em>2019 |13min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+    <div>
+    <div>
+       <div class="play">  
+    <amp-img src="img\sm5.jpg" width="450" height="295" alt="and another sample image" ></amp-img> 
+   <div class="middle"><img src="https://preprod-gemplex-assets.gemplex.tv/web/play-button.svg" height=50px width=50px>
+    </div>
+    </div>
+ <amp-fit-text layout="fixed-height" width="40" height="30">
+            <div class='caption'>
+                <p class='text-inside'>Kera<br><em>2019 |15min</em></p>
+            </div>
+     </amp-fit-text>
+   </div>
+   </div>
+   
+    </amp-carousel>
+</div>
+<center>
+  <div style="padding-top: 15px;padding-bottom: 15px;">
+<img src="img\ad.jpg" height="200px" width="1000px"  alt="ad">
+  </div>
+</center>
+<h5 style="font-weight: bold; color: #04396B">Languages</h5>
+<div>
+  <amp-carousel height="170" layout="fixed-height" type="carousel">
+  <div class="artist-card" >
+    <div class="image-wrap">
+   <img src="img\e1.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+ </div>  <p>Hindi</p></div>
+   <div class="artist-card" >
+    <div class="image-wrap">
+    <img src="img\e2.jpg" width="90" height="90" style="border-radius: 50%;"alt="another sample image" >
+     </div>   <p>Bengali</p></div>
+       <div class="artist-card" >
+    <div class="image-wrap">
+    <img src="img\e3.jpg" width="90" height="90" style="border-radius: 50%;" alt="and another sample image" >
+       </div>   <p>Malyalam</p></div>
+          <div class="artist-card" >
+    <div class="image-wrap">
+    <img src="img\e4.jpg" width="90" height="90" style="border-radius: 50%;" alt="and another sample image" >
+     </div> <p>Punjabi</p></div>
+     <div class="artist-card" >
+    <div class="image-wrap">
+    <img src="img\e5.jpg" width="90" height="90" style="border-radius: 50%;" alt="and another sample image" >
+      </div>  <p>English</p></div>
+
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+       <img src="img\ww.jpg" width="90" height="90" style="border-radius: 100%;"alt="a sample image" >
+    </amp-carousel>
+</div>
+<h5 style="font-weight: bold; color: #04396B">Genre</h5>
+ <div>
+  <amp-carousel height="150" layout="fixed-height" type="carousel">
+<div class="cont" >
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Drama</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Action</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Thriller</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Horror</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Comedy</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Adult</b></div>
+</div>
+<div class="cont">
+  <img src="img\ge.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"><b>Rom Com</b></div>
+</div>
+<div class="cont">
+  <img src="img\ww.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"></div>
+</div>
+<div class="cont">
+  <img src="img\ww.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"></div>
+</div>
+<div class="cont">
+  <img src="img\ww.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"></div>
+</div>
+<div class="cont">
+  <img src="img\ww.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"></div>
+</div>
+<div class="cont">
+  <img src="img\ww.jpg" alt="Snow" width="170" height="120">
+  <div class="centered"></div>
+</div>
+
+    </amp-carousel>
+</div>
+</div>
+<!--footer start-->
+
+ <hr style="color: #007bff;">
+<div class="abc" style="background-color:#d3d6db">
+  <div  class="container-fluid" style="border-style: 2px solid #007bff ;background-color:#d3d6db;padding-left: 50px;" >
+  <font face="Georgia" size=2.5 >  
+  <br>
+  <br>
+    <div class="row" style="align-items: center">
+    <div class="col-sm" style ="align-items: center;opacity:0.9">
+     <strong> <p style="font-family: sans-serif;"> Subscription<br> Career</p></strong>
+    </div>
+    <div class="col-sm" style="opacity:0.9">
+        <strong> <p style="font-family: sans-serif;"> Hype<br> Feedback</p></strong>
+    </div>
+    <div class="col-sm" style="opacity:0.9">
+       <strong> <p style="font-family: sans-serif;"> About Us<br> Support</p></strong>
+    </div>
+     <div class="col-sm" style="opacity:0.9">
+      <strong> <p style="font-family: sans-serif;"> Faqs<br> Contact Us</p></strong>
+    </div>
+     <div class="col-md">
+   <strong> <span style="font-family: sans-serif;">Available On</span><br> <span style="width:400px; display: inline-block;">
+        <a href="#!"><img src="img/gp.png" style="height:35px;width:100px; "> </a>
+        <a href="#!"><img src="img/ap.png" style="height:35px;width:100px;"> </a>
+        <a href="#!"><img src="img/rok.png" style="height:35px;width:90px;border:1px solid grey;"> </a>
+        <a href="#!"><img src="img/ft.png" style="height:35px;width:70px;border:1px solid grey;"></a></span></strong>
+     </div>
+     <div class="col-md-3">
+    <strong> <span style="font-family: sans-serif;">Connect With Us</span></strong><br><span style="width:500px"><i class="fa fa-facebook-f fa-2x"></i><i class="fa fa-instagram fa-2x"></i>
+      <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-youtube fa-2x"></i></span>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+    <img src="img/gem.png" style="height:40px; width:100px;"><span style="font-size: 12px; padding-left:2%;opacity:0.9;padding-right:2%;">
+    <pre><strong><font face="sans-serif" size=2 >@ 2018-2019 Gemplex. All Rights Reserved | Terms & Condition Privacy Policy  Disclaimer
+Gemplex and all related channel and programming logos servies marks of and all related programming visuals and elements are the property of Gemplex media pvt.ltd.</font></strong></pre>
+    </span>
+    <span><img src="img/aws.png" style="height:50px; width:65px;"></span></div>
+    </font>
+  </div>
+</div>   
+<!--footer end-->
+</body>
+</html>
+
+
